@@ -1,0 +1,26 @@
+.horizontal-movie{
+  display: flex;
+  // background: teal;
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  flex-basis: 100vw;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  justify-content: space-between;
+  position: relative;
+
+  li{
+    overflow: hidden;
+    height: 400px;  
+    margin-right: 2px;
+    display: flex;
+    flex: 0 0 300px;
+  }
+
+  @media screen and(min-width:"1024px") {
+    // height: 400px;
+  }
+
+  
+}

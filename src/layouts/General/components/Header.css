@@ -1,0 +1,17 @@
+.header-general {
+  background: #0a0a0a;
+  color: #f2f2f2;
+  font-family: 'Open Sans', Courier, monospace; }
+
+.nav-general {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; }
+  .nav-general__brand-logo {
+    font-size: 3rem;
+    padding: 1rem; }
+  .nav-general__menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-grow: 1; }

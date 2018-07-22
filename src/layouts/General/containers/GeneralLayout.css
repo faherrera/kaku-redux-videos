@@ -1,0 +1,16 @@
+.general-wrapper {
+  background: black;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: white;
+  overflow: hidden; }
+  .general-wrapper .general-content {
+    flex: 1 0 auto; }
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000; }

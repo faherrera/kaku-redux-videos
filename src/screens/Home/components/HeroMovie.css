@@ -1,0 +1,9 @@
+.hero-movie {
+  height: 60vh;
+  background: url("../../../assets/img/predator.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }

@@ -1,10 +1,20 @@
 import React from 'react'
 
-const Header = () => {
+import './Header.css';
+
+const Header = (props) => {
   return(
-    <header className="header-general">
-      <nav>
-        <h1> Este es el header General.</h1>
+    <header className="header-general" ref={props.setRef}>
+      <nav className="nav-general" >
+        <div className="nav-general__brand-logo">
+          Kaku Video
+        </div>
+        <ul className="nav-general__menu">
+          <li> Peliculas</li>
+          <li> Series</li>
+          <li> Documentales</li>
+          <li> Contacto </li>
+        </ul>
       </nav>
     </header>
   );

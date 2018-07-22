@@ -1,13 +1,11 @@
 import React from 'react'
 
+import './Footer.css';
+
 const Footer = (props) => {
   return(
     <footer className="footer-general">
-      <ul>
-        <li>Foo</li>
-        <li>Ter</li>
-        <li>One</li>
-      </ul>
+      <span> Copyright © 2018 KAKUVIDEO. Ningún Derecho reservado. </span>
     </footer>
   )
 }
