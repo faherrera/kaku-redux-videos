@@ -3,7 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { Home } from './screens/Home/containers/Home';
- 
-ReactDOM.render(<Home />, document.getElementById('root'));
+import {BrowserRouter} from 'react-router-dom';
+import Routes from './routes';
+import {Provider} from 'react-redux';
+
+import store from './redux/store';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </Provider>
+, document.getElementById('root'));
 registerServiceWorker();

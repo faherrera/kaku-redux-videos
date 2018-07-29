@@ -4,14 +4,15 @@
   position: relative;
   color: white; }
   .movie-item__title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: absolute;
     text-align: center;
     left: 0;
-    top: 0;
+    bottom: 0;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.6);
-    width: 100%; }
+    width: 100%;
+    padding: .5rem; }
   .movie-item__img {
     width: 100%;
     height: 100%;

@@ -3,6 +3,7 @@ import Header from './../components/Header';
 import { Footer } from '../components/Footer';
 
 import './GeneralLayout.css';
+import 'normalize.css';
 
 
 class GeneralLayout extends React.Component {

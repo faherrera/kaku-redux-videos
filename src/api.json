@@ -1,0 +1,9 @@
+{
+  "movies":[
+    {
+      "id":1,
+      "title":" Star Wars - The Force Awakens",
+      "cover": "/"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.movie-card{
+  text-align: center;
+  &__cover{
+    height: 500px;
+    img{
+      height: 100%;
+    }
+  }
+
+}

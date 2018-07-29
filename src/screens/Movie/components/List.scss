@@ -1,0 +1,11 @@
+.movie-list-all{
+  display: flex;
+  flex-wrap: wrap;
+  // background: white;
+  justify-content: space-around;
+  &__item{
+    height: 250px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+}

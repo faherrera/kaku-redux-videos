@@ -5,12 +5,11 @@
   padding: 0;
   flex-basis: 100vw;
   overflow-y: hidden;
-  overflow-x: scroll;
-  justify-content: space-between;
+  overflow-x: auto;
+  justify-content: space-around;
   position: relative; }
-  .horizontal-movie li {
+  .horizontal-movie-item {
     overflow: hidden;
     height: 400px;
-    margin-right: 2px;
     display: flex;
     flex: 0 0 300px; }
