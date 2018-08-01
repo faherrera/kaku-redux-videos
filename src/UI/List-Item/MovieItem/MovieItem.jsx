@@ -4,8 +4,7 @@ import {Link} from 'react-router-dom';
 import './MovieItem.css';
 
 const MovieItem = (props) => {
-  let {id,title_long,description_full,large_cover_image} = props;
-
+  let {id,title_long,large_cover_image} = props;
   return(
     <Link className="movie-item"  to={`/movies/${id || 94}`}>
       <span className="movie-item__title">

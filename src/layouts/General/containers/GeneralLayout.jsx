@@ -31,9 +31,15 @@ class GeneralLayout extends React.Component {
     return(
       <div className="general-wrapper">
         <Header setRef={this.handleRef} />
-        <div className="general-content">
-          {this.props.children}
-        </div>
+
+        {
+          this.props.loading == true
+          ? <div className="general-content"> <h1>Cargando ...</h1></div>
+          :
+          <div className="general-content">
+            {this.props.children}
+          </div>
+        }
         <Footer />
       </div>
     )

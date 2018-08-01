@@ -3,17 +3,20 @@ import { GeneralLayout } from '../../../layouts/General/containers/GeneralLayout
 import { HeroMovie } from '../components/HeroMovie';
 import { SectionMovies } from '../components/SectionMovies';
 import {connect} from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { List } from 'immutable';
 
 
 const Home = (props) => {
-  let {data} = props;
+  let {data,loading,error} = props;
+
   return(
-    <GeneralLayout>
+    <GeneralLayout loading={loading}>
       <HeroMovie/>
 
       <SectionMovies
         title="Preferenciales"
-        data={data.movies}
+        data={data}
       />
       <SectionMovies
         title="Más vistas"
@@ -23,12 +26,20 @@ const Home = (props) => {
 }
 
 const mapStateToProps = (state,props) => {
-  console.log('====================================');
-  console.log("Esto es lo que recibo de state",state);
-  console.log('====================================');
+
 
   return{
-    data:state.movies,
+    data : state.movies.data,
+    loading: state.movies.loading,
+    error: state.movies.error,
+    // loading: state.get('movies').get('loading'),
+    // error: state.get('movies').get('error')
   }
 }
-export default connect(mapStateToProps)(Home);
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    // actions : bindActionCreators({getAllMoviesDispatch},dispatch)
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Home);

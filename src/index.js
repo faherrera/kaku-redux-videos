@@ -8,7 +8,10 @@ import Routes from './routes';
 import {Provider} from 'react-redux';
 
 import store from './redux/store';
+import { fetchAllMovies } from './redux/actions/movies';
 
+store.dispatch(fetchAllMovies()); //Llamo de entrada a todas las peliculas.
+ 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

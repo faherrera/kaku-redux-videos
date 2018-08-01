@@ -4,7 +4,7 @@ import { MovieItem } from '../../../UI/List-Item/MovieItem/MovieItem';
 import './List.css';
 
 const List = (props) => {
-  let data = props.data || [];
+  let data = props.data ;
 
   return(
     <section className="movie-list-all">

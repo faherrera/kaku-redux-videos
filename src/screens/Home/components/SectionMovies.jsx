@@ -3,11 +3,12 @@ import { HorizontalMovie } from '../../../UI/List/Horizontal-Movie/HorizontalMov
 import PropTypes from 'prop-types';
 
 const SectionMovies = (props) => {
+  let {data} = props;
   return(
     <section className="section-movies">
       <h3> {props.title} </h3>
       <HorizontalMovie 
-        data={props.data}
+        data={data}
       />
     </section>
   )
@@ -15,7 +16,7 @@ const SectionMovies = (props) => {
 
 SectionMovies.propTypes = {
   title: PropTypes.string.isRequired,
-  data:PropTypes.array //
+  data:PropTypes.any //
 }
 
 export {SectionMovies};

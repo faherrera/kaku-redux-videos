@@ -1,10 +1,10 @@
-import {createStore} from 'redux';
+import {createStore, applyMiddleware } from 'redux';
 import reducer from './reducers/index';
-
-let initialState = [];
+import { Map } from 'immutable';
+import thunk from 'redux-thunk';
+import {composeWithDevTools} from 'redux-devtools-extension';
 
 export default createStore(
     reducer,
     {},
-     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
+    composeWithDevTools(applyMiddleware(thunk)));
